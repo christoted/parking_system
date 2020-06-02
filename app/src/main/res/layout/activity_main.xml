@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="175dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_park"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:text="Parking Track"
+        android:textAlignment="center"
+        android:textColor="#65A9EE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_logo"/>
+
+    <Button
+        android:id="@+id/btn_see"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:text="Click to Track"
+        android:textColor="#65A9EE"
+        android:background="@drawable/selector2"/>
+
+
+
+
+</RelativeLayout>

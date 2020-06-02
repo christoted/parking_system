@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParkingActivity">
+
+
+    <GridLayout
+        android:columnCount="1"
+        android:alignmentMode="alignMargins"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Slot Parking"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#65A9EE"
+                android:layout_marginBottom="20dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_green"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 = Available"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="15sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_red"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 = Not Available"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="15sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_columnWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/selector"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="B1 Slot"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="8dp"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_parking_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="1/0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="60sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_parking_avail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking Status"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_below="@+id/tv_parking_avail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-20dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#228B22"
+                    android:layout_marginBottom="20dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/selector">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="B2 Slot"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="8dp"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_parking_status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="1/0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="60sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_parking_avail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking Status"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status2"
+                    android:layout_below="@+id/tv_parking_avail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-20dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#228B22"
+                    android:layout_marginBottom="20dp"
+                    />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_columnWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:background="@drawable/selector">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="B3 Slot"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="8dp"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_parking_status3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="1/0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="60sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_parking_avail3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking Status"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#65A9EE"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status3"
+                    android:layout_below="@+id/tv_parking_avail3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-20dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#228B22"
+                    android:layout_marginBottom="20dp"
+                    />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Version 1.1.0"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="#65A9EE"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </GridLayout>
+
+</ScrollView>
